@@ -12,25 +12,27 @@
     <form>
       <div class="form-group">
         <label for="cep">CEP</label>
-        <input type="number" class="form_control" placeholder="00000-000" id="cep">
+        <input type="text" class="form_control" placeholder="00000-000" maxlength="9" id="cep">
       </div>
       <div class="form-group">
         <label for="logradouro">logradouro</label>
-        <input type="text" class="form_control" placeholder="Cidade" id="logradouro">
+        <input type="text" class="form_control" placeholder="Cidade" id="logradouro" disabled="disabled">
       </div>
       <div class="form-group">
         <label for="bairro">Bairro</label>
-        <input type="text" class="form_control" placeholder="Bairro" id="bairro">
+        <input type="text" class="form_control" placeholder="Bairro" id="bairro" disabled="disabled">
       </div>
       <div class="form-group">
         <label for="localidade">Localidade</label>
-        <input type="text" class="form_control" placeholder="Localidade" id="localidade">
+        <input type="text" class="form_control" placeholder="Localidade" id="localidade" disabled="disabled">
       </div>
       <div class="form-group">
         <label for="uf">UF</label>
-        <input type="text" class="form_control" placeholder="Estado" id="uf">
+        <input type="text" class="form_control" placeholder="Estado" id="uf" disabled="disabled">
       </div>
     </form>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
