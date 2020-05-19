@@ -19,7 +19,7 @@ cep.addEventListener("blur", (e) => {
     cache: 'default'
   }
 
-  fetch(`http://viacep.com.br/ws/${search}/json`, option)
+  fetch(`https://viacep.com.br/ws/${search}/json`, option)
   .then(res => {res.json()
     .then(data => showData(data))  
   })
