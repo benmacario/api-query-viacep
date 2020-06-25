@@ -1,4 +1,10 @@
 const cep = document.querySelector("#cep")
+const btn = document.querySelector(".btn")
+
+cep.addEventListener("keyup", (e) => {
+  let value = cep.value.replace(/^([\d]{5})$/, `${cep.value}-`)
+  cep.value = value
+})
 
 const showData = (result) => {
   for(const campo in result) {
@@ -10,7 +16,8 @@ const showData = (result) => {
   }
 }
 
-cep.addEventListener("blur", (e) => {
+btn.addEventListener("click", (e) => {
+  e.preventDefault()
   let search = cep.value.replace("-","")
 
   const option = {
