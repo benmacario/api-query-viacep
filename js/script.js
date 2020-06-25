@@ -1,5 +1,5 @@
 const cep = document.querySelector("#cep")
-const btn = document.querySelector(".btn")
+const btn = document.querySelector("#btn")
 
 cep.addEventListener("keyup", (e) => {
   let value = cep.value.replace(/^([\d]{5})$/, `${cep.value}-`)
