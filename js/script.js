@@ -1,24 +1,24 @@
-const cep = document.querySelector("#cep")
-const btn = document.querySelector("#btn")
+const $cep = document.querySelector("#cep")
+const $btn = document.querySelector("#btn")
+const $danger = document.querySelector(".danger")
 
-cep.addEventListener("keyup", (e) => {
-  let value = cep.value.replace(/^([\d]{5})$/, `${cep.value}-`)
-  cep.value = value
+$cep.addEventListener("keyup", (e) => {
+  let value = $cep.value.replace(/^([\d]{5})$/, `${$cep.value}-`)
+  $cep.value = value
 })
 
 const showData = (result) => {
   for(const campo in result) {
     if(document.querySelector(`#${campo}`)) {
-      const campos = document.querySelector(`#${campo}`)
-      campos.value = result[campo]
+      const $campos = document.querySelector(`#${campo}`)
+      $campos.value = result[campo]
     }
-
   }
 }
 
-btn.addEventListener("click", (e) => {
+$btn.addEventListener("click", (e) => {
   e.preventDefault()
-  let search = cep.value.replace("-","")
+  let search = $cep.value.replace("-","")
 
   const option = {
     method: 'GET',
@@ -28,7 +28,12 @@ btn.addEventListener("click", (e) => {
 
   fetch(`https://viacep.com.br/ws/${search}/json`, option)
   .then(res => {res.json()
-    .then(data => showData(data))  
+    .then(data => {
+      showData(data)
+      $danger.style.display = "none"
+    })
   })
-  .catch(err => console.log("Deu erro: " + err))
+  .catch(err => {
+    $danger.style.display = "flex"
+  })
 })
