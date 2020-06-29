@@ -2,16 +2,26 @@ const $cep = document.querySelector("#cep")
 const $btn = document.querySelector("#btn")
 const $danger = document.querySelector(".danger")
 
+function onlyNumber(e) {
+  let charCode = e.charCode ? e.charCode : e.keyCode;
+  if (charCode != 8 && charCode != 9) {
+    if (charCode < 48 || charCode > 57) {
+      return false;
+    }
+  }
+}
+
 $cep.addEventListener("keyup", (e) => {
+  e.preventDefault()
   let value = $cep.value.replace(/^([\d]{5})$/, `${$cep.value}-`)
   $cep.value = value
 })
 
 const showData = (result) => {
-  for(const campo in result) {
-    if(document.querySelector(`#${campo}`)) {
-      const $campos = document.querySelector(`#${campo}`)
-      $campos.value = result[campo]
+  for(const field in result) {
+    if(document.querySelector(`#${field}`)) {
+      const $field = document.querySelector(`#${field}`)
+      $field.value = result[field]
     }
   }
 }
@@ -19,6 +29,10 @@ const showData = (result) => {
 $btn.addEventListener("click", (e) => {
   e.preventDefault()
   let search = $cep.value.replace("-","")
+
+  if(document.querySelector(".error")) {
+    $danger.classList.remove("error")
+  }
 
   const option = {
     method: 'GET',
@@ -30,10 +44,11 @@ $btn.addEventListener("click", (e) => {
   .then(res => {res.json()
     .then(data => {
       showData(data)
-      $danger.style.display = "none"
+    $danger.style.display = "none"
     })
   })
   .catch(err => {
     $danger.style.display = "flex"
+    $danger.classList.add("error")
   })
 })
