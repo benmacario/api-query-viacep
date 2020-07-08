@@ -4,7 +4,7 @@
 
 ## Sobre
 
-Nessa pequena aplicação, você pode realizar pesquisas simples de CEP e obter infomações como, nome da cidade, logradouro e o bairro. Ideal pra quando você tem o CEP do endereço e não sabe as demais informações.
+Nessa pequena aplicação, você podá realizar pesquisas simples de CEP e obter infomações como, nome da cidade, logradouro e o bairro. Ideal pra quando você tem o CEP do endereço e não sabe as demais informações.
 
 
 ## Objetivo
