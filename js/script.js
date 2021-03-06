@@ -1,6 +1,7 @@
 const $cep = document.querySelector("#cep")
 const $btn = document.querySelector("#btn")
 const $danger = document.querySelector(".danger")
+const $success = document.querySelector(".success")
 
 function onlyNumber(e) {
   let charCode = e.charCode ? e.charCode : e.keyCode;
@@ -44,11 +45,22 @@ $btn.addEventListener("click", (e) => {
   .then(res => {res.json()
     .then(data => {
       showData(data)
-    $danger.style.display = "none"
-    })
+    $success.style.display = "flex"
+    $success.classList.add("fadeAnimateWarning");
+
+    const timeWarn = setTimeout(() => {
+      $success.style.display = "none"
+    }, 5000);
+    cleanTimeout(timeWarn);
+    });
   })
   .catch(err => {
     $danger.style.display = "flex"
-    $danger.classList.add("error")
+    $danger.classList.add("fadeAnimateWarning")
+
+    const timeWarn = setTimeout(() => {
+      $danger.style.display = "none"
+    }, 5000);
+    cleanTimeout(timeWarn);
   })
 })
