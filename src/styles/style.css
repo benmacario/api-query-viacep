@@ -221,13 +221,12 @@ body {
 
 .rectangle-large {
   position: absolute;
-  width: 90%;
-  height: 100vh;
+  width: 80%;
+  height: 20%;
   top: 0;
   right: 0;
 
-  background: url("/src/assets/rec_large.png") no-repeat;
-  background-size: 100% 100vh;
+  background: no-repeat;
 
   animation: animate 1.5s;
 }
@@ -239,7 +238,7 @@ body {
   top: 0;
   right: 0;
 
-  background: url("/src/assets/rec_lower.png") no-repeat;
+  background: no-repeat;
   background-size: 100% 60vh;
 
   animation: animate 2.5s;
