@@ -1,0 +1,93 @@
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .container-section {
+    column-gap: 50px;
+    width: 720px;
+  }
+
+  .container-section form {
+    height: 470px;
+    padding: 20px;
+  }
+
+  .form-group input {
+    font-size: 0.85rem;
+    height: 40px;
+    padding: 10px;
+  }
+
+  #btn {
+    padding: 0 38px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+
+  .container-section > div img {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .container-section {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-section form {
+    height: 500px;
+    width: 100vw;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+
+  .form-group label {
+    margin-top: 10px;
+  }
+
+  .form-group input {
+    font-size: 0.85rem;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .rectangle-large {
+    display: none;
+  }
+
+  .rectangle-lower {
+    display: none;
+  }
+
+  .container-section footer p {
+    text-align: center;
+  }
+
+  .container-section footer {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 40px;
+    bottom: 0;
+  }
+
+  .container-section > div img {
+    display: none;
+  }
+
+  #btn {
+    margin-top: 20px;
+  }
+}

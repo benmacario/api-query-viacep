@@ -2,24 +2,26 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="./assets/favicon.png">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">,
+  
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/responsive.css">
+  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
+  
+  <link rel="icon" href="/src/assets/favicon.png">
+  
   <title>Pesquisar localidade - HOME</title>
 </head>
 <body>
   <div class="rectangles">
-    <div class="rectangle-large"><img src="/assets/rec_large.png"></div>
-    <div class="rectangle-lower"><img src="/assets/rec_lower.png"></div>
+    <div class="rectangle-large"></div>
+    <div class="rectangle-lower"></div>
   </div>
 
   <div class="container">
     <section class="container-section">
-  
       <form>
         <div class="form-group">
           <label for="cep">CEP</label>
@@ -46,21 +48,24 @@
         </div>
       </form>
   
-      <div>
-        <img src="./assets/find-house.svg" alt="Imagem de pesquisa" />
+      <div class="Image-house">
+        <img src="/src/assets/find-house.svg" alt="Imagem de pesquisa" />
       </div>
+
       <footer>
-        <p>Create by <strong>Brendon Machado</strong></p>
+        <p>Made by <strong><a href="https://linkedin.com/in/brendon-machado">Brendon Machado</a></strong></p>
       </footer>
+
+      <div class="danger" style="display: none;">
+        <p>Error ao consultar CEP. Verifique se digitou o CEP corretamente!</p>
+      </div>
+      <div class="success" style="display: none;">
+        <p>Consulta feita com sucesso!</p>
+      </div>
+
     </section>
-    <div class="danger" style="display: none;">
-      <p>Error ao consultar CEP. Verifique se digitou o CEP corretamente!</p>
-    </div>
-    <div class="success" style="display: none;">
-      <p>Consulta feita com sucesso!</p>
-    </div>
   </div>
 
-  <script src="./js/script.js"></script>
+  <script src="/src/js/script.js"></script>
 </body>
 </html>
