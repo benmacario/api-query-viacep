@@ -110,6 +110,17 @@ body {
   animation: animateIconHouse 2s;
 }
 
+@keyframes animateIconHouse {
+  from {
+    opacity: 0;
+    transform: translateX(60%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .container-section footer {
   grid-column-start: 2;
   grid-column-end: 2;
@@ -215,7 +226,7 @@ body {
   top: 0;
   right: 0;
 
-  background: url(/src/assets/rec_large.png) no-repeat;
+  background: url("/src/assets/rec_large.png") no-repeat;
   background-size: 100% 100vh;
 
   animation: animate 1.5s;
@@ -228,7 +239,7 @@ body {
   top: 0;
   right: 0;
 
-  background: url(/src/assets/rec_lower.png) no-repeat;
+  background: url("/src/assets/rec_lower.png") no-repeat;
   background-size: 100% 60vh;
 
   animation: animate 2.5s;
@@ -240,16 +251,5 @@ body {
   }
   to {
     transform: translateY(0);
-  }
-}
-
-@keyframes animateIconHouse {
-  from {
-    opacity: 0;
-    transform: translateX(60%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
