@@ -4,41 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Consulta Cep</title>
+  <link rel="icon" href="./assets/favicon.png">
+
+  <title>Pesquisar localidade | HOME</title>
 </head>
 <body>
-  <div class="title">
-    <h1>Consulta de CEP</h1>
+  <div class="rectangles">
+    <div class="rectangle-large"></div>
+    <div class="rectangle-lower"></div>
   </div>
+
   <div class="container">
-    <form>
-      <div class="form-group">
-        <label for="cep">CEP</label>
-        <input id="cep" class="form_control" type="text" placeholder="00000-000" maxlength="9" onkeypress="return onlyNumber(event)">
+    <section class="container-section">
+  
+      <form>
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <input id="cep" class="form_control" type="text" placeholder="00000-000" maxlength="9" onkeypress="return onlyNumber(event)">
+        </div>
+        <div class="form-group">
+          <label for="logradouro">Logradouro</label>
+          <input id="logradouro" class="form_control" type="text" placeholder="Rua" disabled="disabled">
+        </div>
+        <div class="form-group">
+          <label for="bairro">Bairro</label>
+          <input id="bairro" class="form_control" type="text" placeholder="Bairro" disabled="disabled">
+        </div>
+        <div class="form-group">
+          <label for="localidade">Cidade</label>
+          <input id="localidade" class="form_control" type="text" placeholder="Localidade" disabled="disabled">
+        </div>
+        <div class="form-group">
+          <label for="uf">UF</label>
+          <input id="uf" class="form_control" type="text" placeholder="Estado" disabled="disabled">
+        </div>
+        <div class="button">
+          <button id="btn">Buscar</button>
+        </div>
+      </form>
+  
+      <div>
+        <img src="./assets/House_searching.png" alt="Imagem de pesquisa" />
+        <div class="danger" style="display: none;">
+          <p>Error ao consultar CEP. Verifique se digitou o CEP corretamente!</p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="logradouro">Logradouro</label>
-        <input id="logradouro" class="form_control" type="text" placeholder="Cidade" disabled="disabled">
-      </div>
-      <div class="form-group">
-        <label for="bairro">Bairro</label>
-        <input id="bairro" class="form_control" type="text" placeholder="Bairro" disabled="disabled">
-      </div>
-      <div class="form-group">
-        <label for="localidade">Localidade</label>
-        <input id="localidade" class="form_control" type="text" placeholder="Localidade" disabled="disabled">
-      </div>
-      <div class="form-group">
-        <label for="uf">UF</label>
-        <input id="uf" class="form_control" type="text" placeholder="Estado" disabled="disabled">
-      </div>
-      <div class="button">
-        <button id="btn">Pesquisar</button>
-      </div>
-    </form>
-    <div class="danger" style="display: none;">
-      <p>Error ao consultar CEP. Verifique se digitou o CEP corretamente!</p>
-    </div>
+      <footer>
+        <p>Create by Brendon Machado</p>
+      </footer>
+    </section>
   </div>
 
   <script src="./js/script.js"></script>
