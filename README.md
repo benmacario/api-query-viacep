@@ -42,7 +42,7 @@ $ cd api-query-viacep
 
 ### Site
 
-Para ver o resultado do site sem precisar clonar, acesse: [Consulta de CEP](benmacario.github.io/api-query-viacep/).
+Para ver o resultado do site sem precisar clonar, acesse: [Consulta de CEP](https://benmacario.github.io/api-query-viacep/).
 
 ### Licença
 
