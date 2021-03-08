@@ -2,7 +2,11 @@
   <img width="400px"src=".github/icon_title.png" align="center" />
 </h1>
 <h2>
+<<<<<<< HEAD
   <img width="100%" src="https://media.giphy.com/media/wUhRgGjSzyVyRzHmcJ/giphy.gif" align="center"/>
+=======
+  <img width="100%" src="https://media.giphy.com/media/wUhRgGjSzyVyRzHmcJ/source.gif" align="center"/>
+>>>>>>> 5e94b61fa88979acf215797c92b8f1825d2e0698
 </h2>
 <br>
 <h4 align="center">
