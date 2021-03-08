@@ -29,18 +29,9 @@
     width: 18rem;
   }
 
-  .rectangle-large {
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 100vh;
-  }
-
-  .rectangle-lower {
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-size: 100% 100vh;
+  .container-section footer p,
+  .container-section footer a {
+    color: #333;
   }
 }
 
@@ -65,7 +56,7 @@
     height: 500px;
     width: 100vw;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 0;
   }
 
   .form-group label {
@@ -78,16 +69,18 @@
     margin-bottom: 8px;
   }
 
-  .rectangle-large {
-    display: none;
-  }
-
+  .rectangle-large,
   .rectangle-lower {
     display: none;
   }
 
   .container-section footer p {
     text-align: center;
+    color: #888;
+  }
+
+  .container-section footer a {
+    color: #888;
   }
 
   .container-section footer {
@@ -107,6 +100,16 @@
     margin: 20px 0;
   }
 
+  .danger,
+  .success {
+    left: 0;
+    width: 100%;
+  }
+
+  #btn {
+    margin-top: 20px;
+  }
+
   @keyframes animateIconHouse {
     from {
       opacity: 0;
@@ -116,9 +119,5 @@
       opacity: 1;
       transform: scale(1);
     }
-  }
-
-  #btn {
-    margin-top: 20px;
   }
 }
