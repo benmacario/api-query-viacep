@@ -1,19 +1,53 @@
-<h1 align="center">CONSULTA DE CEP</h1>
+<h1 align="center">
+  <img width="400px"src=".github/icon_title.png" align="center" />
+</h1>
+<h2>
+  <img width="100%" src="https://media.giphy.com/media/wUhRgGjSzyVyRzHmcJ/source.gif" align="center"/>
+</h2>
+<br>
+<h4 align="center">
+  <p>
+    <a href="https://www.linkedin.com/in/brendon-machado">
+      <img alt="Made by Brendon Machado" src="https://img.shields.io/github/followers/benmacario?label=Brendon%20Machado&style=social">
+    </a>
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
+  </p>
+</h4>
+<br>
 
-<img src=".github/consultacep-01.png" align="center"/>
+Nessa pequena aplicação, você poderá realizar pesquisas simples de CEP e obter infomações como, nome da cidade, logradouro e o bairro. Ideal para quando você tem o CEP do endereço e não sabe as demais informações.
 
-## Sobre
+### Objetivo
 
-Nessa pequena aplicação, você podá realizar pesquisas simples de CEP e obter infomações como, nome da cidade, logradouro e o bairro. Ideal pra quando você tem o CEP do endereço e não sabe as demais informações.
+O objetivo desse projeto, primeiramente é mostrar como é realizado uma consulta a uma API através do Fetch API.
+Fetch API é uma das melhores tecnologias para processamento assíncrono, trabalhando com Promises permite tratar se o resultado deu certo ou não.
 
-## Objetivo
+### Fique à vontade para clonar e testar na sua máquina.
 
-O objetivo desse projeto, primeiramente é mostrar como é realizado uma consulta a uma API através do Fetch API. Fetch API é uma das melhores tecnologias para processamento assíncrono, trabalhando com Promises permite tratar se o resultado deu certo ou não.
+```bash
+#dê um git clone
+$ git clone https://github.com/benmacario/api-query-viacep.git
 
-## Site
+#Entre na pasta do projeto
+$ cd api-query-viacep
 
-Caso queira ver o resultado do site, acesse: [Consulta de CEP](https://benmacario.github.io/consulta-api-viacep/).
+#Rode o projeto dando duplo clique no arquivo index.html
+```
 
-## LICENÇA
+### Tecnologias utilizadas
 
-[MIT License](LICENSE)
+- HTML5
+- CSS3
+- Javascript
+
+### Site
+
+Para ver o resultado do site sem precisar clonar, acesse: [Consulta de CEP](https://benmacario.github.io/consulta-api-viacep/).
+
+### Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com ❤️ by [Brendon Machado](https://www.linkedin.com/in/brendon-machado)!
